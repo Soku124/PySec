@@ -29,10 +29,10 @@ def SubdomainSearch(domain, dictionary, nums):
                 s = word+str(i)+"."+domain
                 DNSRequest(s)
 
-domain = "google.com"
+domain = "buzzard.org"
 d = "subdomains.txt"
 dictionary = []
 with open(d,"r") as f:
     dictionary = f.read().splitlines()
-SubdomainSearch(domain, dictionary,True)
+SubdomainSearch(domain, dictionary,False)
 

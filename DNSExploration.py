@@ -29,6 +29,7 @@ def SubdomainSearch(domain, dictionary, nums):
                 s = word+str(i)+"."+domain
                 DNSRequest(s)
 
+
 domain = "buzzard.org"
 d = "subdomains.txt"
 dictionary = []
